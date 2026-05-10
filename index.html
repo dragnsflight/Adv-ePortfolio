@@ -1,77 +1,383 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marjorie Furay</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/2e8e5e5d19.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2e8e5e5d19.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <section id="landing-page">
-        <nav>
-            <figure>
-                <img id="personal-logo" src="./assets/1mpactLogo_100x38.png" alt="">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/1mpactLogo_100x38.png" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hi,</h1>
+          <h1 class="title orange">I'm Marjorie</h1>
+          <p class="header__para">
+            I am
+            <b class="orange"
+              >Co-founder of 1mpact IT Group, Frontend Software Engineer,
+              Business Consultant, and University IT Instructor</b
+            >
+            with a passion for building web applications with great user
+            experiences, and creating great minds in both technology and
+            business.
+            <br />
+            Here's is a bit more <b class="orange">about me.</b>
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/marjorie-robinet-furay/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://1mpactit.com"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-solid fa-link"></i>
+            </a>
+            <a
+              href=".assets/resume-exec-May-2026.docx"
+              target="_blank"
+              download
+              class="social__link click"
+            >
+              <i class="fa-regular fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <a href="#">
+        <button class="mail__btn click">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Engineer.
+          </h4>
+          <p class="modal__para">
+            I am dedicated to <b class="orange">executive leadership </b>and
+            business strategy, and have a strong background in
+            <b class="orange">project management</b> and IT consulting. I am
+            committed to delivering <b class="orange">high-quality work </b>and
+            creating <b class="orange">impactful solutions</b> for clients.
+            <br />
+            I am a passionate
+            <b class="orange">frontend software engineer </b>with experience in
+            creating <b class="orange">responsive </b>and user-friendly web
+            applications. My expertise lies in HTML5, CSS3, and JavaScript,
+            along with frameworks like React and WordPress.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
             </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">About</a>
-                </li>
-                <li
-                class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Projects</a>
-                </li>
-                <li
-                class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Contact</a>
-                </li>
-                <li
-                class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    "><i class="fa-solid fa-circle-half-stroke"></i></a>
-                </li>
-            </ul>
-        </nav>
-        <header class="header">
-            <div class="header__content">
-                <h1 class="title">Hi,</h1>
-                <h1 class="title orange">I'm Marjorie</h1>
-                <p class="header__para">
-                    I'm <b class="orange">Co-founder of 1mpact IT Group, Frontend Software Engineer, Business Consultant, and University IT Instructor</b> with a passion for building web applications for great user experiences, and creating great minds in both technology and business.
-                    <br>
-                    Here's is a bit more <b class="orange">about me.</b></p>
-                    <div class="social__list">
-                        <a href="" class="social__link">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="" class="social__link">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="" class="social__link">
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                        <a href="" class="social__link">
-                            <i class="fa-regular fa-file-pdf"></i>
-                        </a>
-                    </div>
-            </div>
-        </header>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                alt=""
+              />
+              <span class="language__name">TypeScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://mobx.js.org/img/mobx.png"
+                alt=""
+              />
+              <span class="language__name">MobX</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png"
+                alt=""
+              />
+              <span class="language__name">Vue</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png"
+                alt=""
+              />
+              <span class="language__name">Nuxt</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">Here's how to contact me.</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">Let's connect!</h4>
+        <form id="contact__form" action="">
+          <div class="form__item">
+            <label class="form__item--label" >Name</label>
+            <input type="text" name="user_name" class="input" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label" >Email</label>
+            <input type="email" name="user_email" class="input" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label" >Message</label>
+            <textarea type="text" name="message" class="input" required></textarea>
+          </div>
+        </form>
+       </div>
+      </div>
     </section>
-    
-</body>
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="orange">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/1mpact-main-screen.JPG"
+                  class="project__img"
+                  alt="1mpact Main Screen"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    1mpact IT Group, LLC
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Co-founder: Frontend Software Engineer; HTML5, CSS,
+                    JavaScript, WordPress, MobaXterm; Design, Adobe Creative
+                    Suite.
+                  </h4>
+                  <p class="project__description--para">
+                    Consulting business owners in the areas of IT, business
+                    strategy, and project management. Helping clients build and
+                    maintain websites, and providing IT support and training.
+                    Speaking engagements on topics of IT, business strategy, and
+                    project management.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://1mpactit.com"
+                      target="_blank"
+                      class="project__description--link"
+                      alt="1mpact IT Group link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/PGIPods-full screen-02.JPG"
+                  class="project__img"
+                  alt="PGIPods Screen"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">PGIPods</h3>
+                  <h4 class="project__description--sub-title">
+                    Graduate IT Internship Director; Project Management, MS
+                    Azure, AWS, WordPress, SharePoint, HTML5, CSS3, JavaScript,
+                    PowerApps, Spotify, iHeart, iTunes.
+                  </h4>
+                  <p class="project__description--para">
+                    Directing the Graduate IT Internship Program at the Purdue
+                    Global University online. Managing a team of 20+ interns and
+                    10+ projects each semester. Projects include web
+                    development, app development, software development, data
+                    analysis, cybersecurity, database, networkingand IT support.
+                    Interns gain real-world experience and skills in the IT
+                    field, and have the opportunity to work on projects for real
+                    clients.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://www.pgipods.com/"
+                      target="_blank"
+                      class="project__description--link"
+                      alt="PGIPods link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/ChampsLab_Main-screen2.png"
+                  class="project__img"
+                  alt="ChampsLab Main Screen"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">ChampsLab</h3>
+                  <h4 class="project__description--sub-title">
+                    Creator; HTML5, CSS3, JavaScript, WordPress, MobaXterm;
+                    Design, Adobe Creative Suite. Google Analytics, Google
+                    Search Console, SEO.
+                  </h4>
+                  <p class="project__description--para">
+                    Creating a website for ChampsLab, a for-profit organization
+                    that provides education and physical training to athletes
+                    and youth. The website includes information about the
+                    organization, its programs, and how to get involved.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://1mpactit.com/portfolio/"
+                      target="_blank"
+                      alt="ChampsLab on Portfolio page link"
+                      class="project__description--link"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer__row"></div>
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img
+              class="footer__logo--img"
+              src="./assets/1mpactLogo_100x38.png"
+              alt="1mpact Logo"
+            />
+          </figure>
+        </a>
+        <div class="footer__social--list">
+          <a
+            href="https://www.linkedin.com/in/marjorie-robinet-furay/"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://1mpactit.com"
+            target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+          >
+            Website
+          </a>
+          <a
+            href="#"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+          >
+            Contact
+          </a>
+          <a
+            href=".assets/resume-exec-May-2026.docx"
+            target="_blank"
+            download
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+          >
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">
+          Copyright &copy; 2026 Marjorie Robinet-Furay. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
